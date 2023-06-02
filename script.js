@@ -22,7 +22,7 @@ function typeSentence() {
 
       //Set a delay for each letter to create a sequential appreance effect
       letterSpan.style.animationDelay = `${
-        wordIndex * 0.3 + letterIndex * 0.1
+        wordIndex * 10.0 + letterIndex * 5.0
       }s`;
 
       //Append the letter to the sentence container
@@ -33,7 +33,7 @@ function typeSentence() {
 }
 
 //Call the stypeSentence function initially
-typeSentence();
+// typeSentence();
 
 //Call the typeSentence function again after the animation ends
 sentenceContainer.addEventListener("animationend", typeSentence);
